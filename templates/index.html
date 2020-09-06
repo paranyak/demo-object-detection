@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Object detection</title>
+    <link rel="stylesheet" type="text/css" href="../static/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="../static/index.js"></script>
+
+</head>
+
+<body>
+<div class="App">
+    <img src="../static/search.gif" class="img-app"/>
+    <div class="main"></div>
+    <div class="header header-main">
+        <h1 class="header-app">ARTIFICIAL INTELLIGENCE AND <span>MACHINE LEARNING</span> FOR WELL object detection</h1>
+        <h2 class="header-info">The Geniusee data science team created a tool to help clients detect different objects in image. Our  computer technology related to computer vision and image processing that deals with detecting instances of semantic objects of a certain class (such as humans, animals, buildings, or cars) in digital images. </h2>
+    </div>
+    <div class="challenge">
+        <h1 class="header-app">AI-Powered predictions</h1>
+        <img src='../static/object-detection.jpg' class="simple-img"/>
+        <h1 class="header-app margin-top">CHALLENGES WE SOLVE</h1>
+        <div class="challenge-block">
+            <img src='../static/analysis.png' class="small-img"/>
+            <h2 class="header-info challenge-info">Reduce the time to interpret large amounts of photo data from weeks to seconds</h2>
+        </div>
+        <div class="challenge-block">
+            <img src='../static/people.png' class="small-img small-img-right"/>
+            <h2 class="header-info challenge-info challenge-info-right">Automate manual interpretation</h2>
+        </div>
+        <div class="challenge-block">
+            <img src='../static/innovation.png' class="small-img"/>
+            <h2 class="header-info challenge-info">Accelerate business decisions based on analyzed data. You no longer need to wait for data, it is always up to date.</h2>
+        </div>
+    </div>
+    <div class="challenge">
+        <h1 class="header-app">Try demo</h1>
+        <h2 class="header-info">Just upload your image and in 2 seconds get the predicted result. It`s easier than you think!</h2>
+        <form id="form" onsubmit="handleUploadImage(event)">
+        <div  class="inl-block">
+            <label id='fa-icon-id' for="file-upload" class="custom-file-upload">
+                <i  class="fa fa-cloud-upload"></i> Upload
+            </label>
+            <input type="file" id="file-upload" onChange="changeFiles(event)" />
+        </div>
+        <div class="inl-block">
+            <input id="submit-input" class="submit-button" type="submit" value="Process..."/>
+        </div>
+    </form>
+    </div>
+
+    <div id="result-image">
+    </div>
+</div>
+</body>
+
+</html>
